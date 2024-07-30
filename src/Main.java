@@ -5,19 +5,9 @@ public class Main {
     public static void main(String[] args) {
         Printer printer = new Printer();
         Calculator calculator = new Calculator(printer);
-
         Scanner scanner = new Scanner(System.in);
-        String stringToCalculate = scanner.nextLine();
-        String[] operands = stringToCalculate.split(" ");
+        Parser parser = new Parser(calculator, scanner);
 
-        String firstOperand = operands[0]; //первое число
-        String secondOperand = operands[2]; //второе число
-        String operatorString = operands[1]; //знак
-
-        Operator operator = Operator.findByString(operatorString);
-        Double first = Double.parseDouble(firstOperand);
-        Double second = Double.parseDouble(secondOperand);
-
-        calculator.calculate(first, second, operator);
+        parser.parse();
     }
 }
