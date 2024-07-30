@@ -1,11 +1,16 @@
+package parser;
+
+import calculator.Calculator;
+import operator.Operator;
+
 import java.util.Scanner;
 
-public class Parser {
+public class StringParser implements Parser {
 
     private final Calculator calculator;
     private final Scanner scanner;
 
-    public Parser(Calculator calculator, Scanner scanner) {
+    public StringParser(Calculator calculator, Scanner scanner) {
         this.calculator = calculator;
         this.scanner = scanner;
     }

@@ -1,3 +1,5 @@
+package operator;
+
 public enum Operator {
 
     MULTIPLY("*"),
