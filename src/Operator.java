@@ -21,6 +21,6 @@ public enum Operator {
             }
         }
 
-        return null;
+        throw new RuntimeException("Вы ввели неверный знак");
     }
 }

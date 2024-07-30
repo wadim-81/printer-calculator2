@@ -15,11 +15,9 @@ public class Main {
         String operatorString = operands[1]; //знак
 
         Operator operator = Operator.findByString(operatorString);
+        Double first = Double.parseDouble(firstOperand);
+        Double second = Double.parseDouble(secondOperand);
 
-
-
-        //35 + 56
-
-
+        calculator.calculate(first, second, operator);
     }
 }
