@@ -12,10 +12,10 @@ public class Main {
 
         String firstOperand = operands[0]; //первое число
         String secondOperand = operands[2]; //второе число
-        String operator = operands[1]; //знак
+        String operatorString = operands[1]; //знак
 
+        Operator operator = Operator.findByString(operatorString);
 
-        calculator.
 
 
         //35 + 56
