@@ -9,15 +9,15 @@ import java.time.LocalDateTime;
     public class OperationHistoryEntry {
 
         private Operator operator;
-        private double operand1;
-        private double operand2;
+        private double FirstOperand;
+        private double SecondOperand;
         private double result;
         private LocalDateTime timestamp;
 
         public OperationHistoryEntry(Operator operator, double operand1, double operand2, double result) {
             this.operator = operator;
-            this.operand1 = operand1;
-            this.operand2 = operand2;
+            this.FirstOperand = FirstOperand;
+            this.SecondOperand = SecondOperand;
             this.result = result;
             this.timestamp = LocalDateTime.now();
         }
@@ -26,11 +26,11 @@ import java.time.LocalDateTime;
         }
 
         public double getOperand1() {
-            return operand1;
+            return FirstOperand;
         }
 
         public double getOperand2() {
-            return operand2;
+            return SecondOperand;
         }
 
         public double getResult() {
@@ -45,8 +45,8 @@ import java.time.LocalDateTime;
         public String toString() {
             return "OperationHistoryEntry{" +
                     "operator=" + operator +
-                    ", operand1=" + operand1 +
-                    ", operand2=" + operand2 +
+                    ", operand1=" + FirstOperand +
+                    ", operand2=" + SecondOperand +
                     ", result=" + result +
                     ", timestamp=" + timestamp +
                     '}';
